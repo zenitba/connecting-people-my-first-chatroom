@@ -40,7 +40,7 @@ Bij het maken van deze opdracht heb ik gebruik gemaakt van:
 
 5.Terminal open.
 
-6`.Npm install` (typen in je terminal, daarna enter druken).
+6`.Npm install` ` Npm install Socket.io` (typen in je terminal, daarna enter druken).
 
 7.`gitignore `(aparte file aanmaken (VSCode, editor) en dan node_modules schrijven in de file)
 
