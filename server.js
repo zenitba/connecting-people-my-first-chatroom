@@ -31,9 +31,7 @@ let htmlMemberList = null
 
 // Serveer client-side bestanden
 app.use(express.static(path.resolve('public')))
-app.get('/', function (req, res) {
-    res.render('index', data)
-  })
+
 io.on('connection', (socket) => {
   // Log de connectie naar console
   console.log('a user connected')
