@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,21 +9,28 @@
 </head>
 
 <body>
-
   <main>
-    <section>
+    <!-- section/form voor de chatroom-->
+    <section class="comments">
+      <img src="logo.png" class="logo-image"/></img>
       <h1>Chatroom</h1>
-      <h2>Welkom Bij De Chatroom</h2>
+      <p>Ontmoet andere ouders Er zijn nu <span id="count">0</span> ouder online.</p>
       <ul></ul>
-      <form>
-        <input type="text" autocomplete="off">
-        <button><span>Send</span></button>
-      </form>
-    </section>
+      <div id="feedback"></div>
+    <form>
+      <label for="handle">Gebruikersnaam</label>
+      <input id="handle" type="text" name="handle" />
+      <label for="message">Bericht</label>
+      <div class="comment">
+        <input id="message" type="text" name="message" placeholder="Plaats een reactie..." autocomplete="off">
+        <button>Verstuur🥜</button>
+      </div>
+    </form>
+  </section>
   </main>
-
+<!-- link naar JS en Socket.io-->
   <script src="/socket.io/socket.io.js"></script>
   <script src="/script.js"></script>
-</body>
 
+</body>
 </html>

@@ -1,148 +1,179 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 body {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: var(--body-font);
     overflow: hidden;
-    min-height: 100vh;
-    min-width: 100vw;
-    /* background: rgb(239, 238, 238); */
-    
     background: rgba(251, 255, 177, 0.739);
     background-image: radial-gradient(
-        circle at bottom left,
-        rgba(233, 244, 109, 0.9),
-        rgba(255, 255, 111, 0) 70%
-      ),
-      radial-gradient(circle at top left, rgb(48, 123, 123), rgba(98, 214, 225, 0) 70%),
-      radial-gradient(circle at center right, rgba(74, 163, 159, 0.8), rgba(136, 217, 230, 0) 50%);
-    background-size: 200% 200%;
-    animation: movement 30s ease infinite alternate-reverse;
-  }
-  
-  @keyframes movement {
-    0% {
-      background-position: 0% 0%;
+          circle at bottom left,
+          rgba(233, 244, 109, 0.9),
+          rgba(255, 255, 111, 0) 70%
+        ),
+        radial-gradient(circle at top left, rgb(48, 123, 123), rgba(98, 214, 225, 0) 70%),
+        radial-gradient(circle at center right, rgba(74, 163, 159, 0.8), rgba(136, 217, 230, 0) 50%);
+      background-size: 200% 200%;
+      animation: movement 30s ease infinite alternate-reverse;
     }
-    25% {
-      background-position: 50% 0%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    75% {
-      background-position: 50% 100%;
-    }
-    100% {
-      background-position: 100% 100%;
-    }
-  }
-  
-  main {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    min-width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  section {
-    width: 30rem;
-    height: 40rem;
-    /* background: rgb(239, 238, 238); */
-    background: rgba(255, 255, 255, 0.525);
-    backdrop-filter: blur(1rem);
-    border-radius: 2rem;
-    border: 5px solid #71b7b09f;
-    box-shadow: 0.8rem 0.8rem 1.6rem 0 rgba(249, 249, 249, 0.5),
-      -0.8rem -0.8rem 1.6rem 0 rgba(255, 255, 255, 0.494);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  section h1 {
-    margin: 0;
-    padding: 0;
-    padding-top: 1.5rem;
-    font-weight: lighter;
-    font-size: 1rem;
-  }
-  
-  section h2 {
-    font-size: 1rem;
-    color: #71b7b0;
-  }
-  
-  section ul {
-    margin: 0;
-    padding: 0.2em;
-    list-style-type: none;
-    flex-grow: 2;
-    width: 18em;
-    overflow-y: scroll;
-  }
-  
-  ::-webkit-scrollbar {
-    background: transparent;
-  }
-  
-  section ul > li {
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
-  }
-  
-  section form {
-    margin: 0 0 2rem 0;
-    padding: 0;
-    width: 25rem;
-    height: 2rem;
-    display: flex;
-  }
-  
-  section form input[type='text'] {
-    margin: 0;
-    padding: 0 1rem;
-    border: none;
-    height: 2rem;
-    flex-grow: 2;
-    background: rgb(239, 238, 238);
-    box-shadow: inset 0.2rem 0.2rem 0.3rem 0 rgba(209, 205, 199, 0.5);
-    border-top-left-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-    border: 0;
-    opacity: 80%;
-    outline: none;
-  }
-  
-  section form > button {
-    padding: 0 0.6rem 0 0.4rem;
-    width: 2.5rem;
-    background: rgb(239, 238, 238);
-    box-shadow: inset -0.2rem 0.2rem 0.3rem 0 rgba(255, 255, 255, 0.393);
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    border: 0;
-    opacity: 80%;
-    outline: none;
-    transition: 0.2s;
-  }
-  
-  section form > button span {
-    display: none;
-  }
-  
-  section form > button::after {
-    content: '⇒';
-  }
-  
-  section form > button:hover {
-    padding-left: 1rem;
-  }
-  
-  section form > button:active {
-    padding-left: 1rem;
-    color: rgb(66, 176, 158);
-  }
+
+
+:root {
+    /* CUSTOM PROPERTIES */
+    /* Colours for specific allergies */
+    --walnoot-kleur: #cd9540;
+    --amandel-kleur: #f1c17e;
+    --cashewnoot-kleur: #e68460;
+    --ei-kleur: #f4eb34;
+    --vis-kleur: #daeeee;
+    --hazelnoot-kleur: #baddce;
+    --pinda-kleur: #72afa6;
+    --schelp-kleur: #f1c8ba;
+    --soja-kleur: #eae3d2;
+
+    /* Primaire kleuren */
+    --donkerblauw: #152a45;
+    --wit: #ffffff;
+    --zwart: #121212;
+    --grijs: #888682;
+    --mini-nav-grijs: #a9a1a1;
+    --licht-grijs: #eaeaea;
+
+    /* Font Family */
+    --body-font: "Montserrat";
+}
+
+main {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-image{
+  margin-top: 1.5rem;
+}
+ /* chatbox */
+section{
+  width: 45rem;
+  height: 60rem;
+  background: rgba(255, 255, 255, 0.913);
+  backdrop-filter: blur(1rem);
+  border-radius: 2rem;
+  border: 5px solid #71b7b09f;
+  box-shadow: 0.8rem 0.8rem 1.6rem 0 rgba(249, 249, 249, 0.5),
+   -0.8rem -0.8rem 1.6rem 0 rgba(255, 255, 255, 0.494);
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+section h1{
+  margin: 0;
+  padding: 0;
+  padding-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--pinda-kleur);
+}
+
+p {
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--zwart);
+
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--wit);
+  width: 11rem;
+  background-color: var(--pinda-kleur);
+  border: none;
+  border-radius: 2em;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+button:hover {
+  color: var(--pinda-kleur);
+  background: white;
+  box-shadow: inset 0px 0px 0px 2px var(--pinda-kleur);
+}
+ /* gebruiker online */
+#count {
+  font-weight: lighter;
+}
+
+ /* gebruikernaam + bericht */
+.comments {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
+  text-align: left;
+}
+ /* berichten ul */
+section ul {
+  margin: 0;
+  padding: 0.2em;
+  list-style-type: none;
+  flex-grow: 2;
+  overflow-y: scroll;
+  width: 35rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+ /* textarea */
+input {
+  padding: 0.9em 2em;
+  border: 2px solid var(--pinda-kleur);
+  border-radius: 2em;
+  width: 20rem;
+  margin-bottom: 2rem;
+}
+
+label {
+  margin-bottom:0.5em;
+}
+.time {
+  font-weight: 100;
+}
+ /* gebruiker naam verstuurd */
+.message-handle {
+  margin-top: 0.25em;
+  font-size: 0.7rem;
+  text-align: left;
+  color: var(--pinda-kleur);
+}
+ /* gebruiker naam in form */
+#handle {
+  margin-bottom: 1em;
+ 
+}
+ /* bericht opmaak*/
+.message-background {
+  margin-top: 1em;
+  padding: 0.1em 1em;
+  color: var(--wit);
+  background-color: var(--hazelnoot-kleur);
+  border-radius: 1em;
+  width: max-content;
+}
+
+.message-background>p {
+  text-align: left;
+}
+
+#message {
+  margin-right: 1.5em;
+  height: min-content;
+}
+
+.comment {
+  display: flex;
+}
