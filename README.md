@@ -1,10 +1,8 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+# Chatroom Vini Mini🥚🥜
+<img width="420" alt="Schermafbeelding 2023-05-15 om 22 18 49" src="https://github.com/zenitba/connecting-people-my-first-chatroom/assets/112856019/3cb12865-2d09-40dd-a3db-a859027f6644">
 
-# Titel
-
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
-
-## Inhoudsopgave
+>
+## Inhoudsopgave 📚
 
 - [Beschrijving](#beschrijving)
 - [Gebruik](#gebruik)
@@ -13,26 +11,55 @@
 - [Bronnen](#bronnen)
 - [Licentie](#licentie)
 
-## Beschrijving
+## Beschrijving 📝
+Een chat gemaakt in de huistijl van Vini Mini waar ouders met elkaar kunnen praten met behulp van Socket.IO, Node.js en Express.
 
-<!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+## Gebruik 👩🏽‍💻
 
-## Gebruik
+## Kenmerken ✅
+Bij het maken van deze opdracht heb ik gebruik gemaakt van:
 
-<!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
+* 🔌Node
+* 📟Ejs
+* 📡Express
+* 📟 HTML
+* 🎨 CSS
+* 📝JS
+* 🧦 Socket.io
+* ✈️ Railway
 
-## Kenmerken
+## Installatie ⚙️
 
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
+1.Installeer` Node.`
 
-## Installatie
+2.Fork deze leertaak.
 
-<!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
+3.Code klonen naar Github Desktop.
 
-## Bronnen
+4.Code open in VSCode of een andere editor.
 
-## Licentie
+5.Terminal open.
+
+6`.Npm install` ` Npm install Socket.io` (typen in je terminal, daarna enter druken).
+
+7.`gitignore `(aparte file aanmaken (VSCode, editor) en dan node_modules schrijven in de file)
+
+8.Npm start (typen in je terminal).
+
+9.`Localhost:8000` (live link om je website te zien, link van de server).
+
+10.Project live zetten met `Railway`
+
+
+## Bronnen 📚
+
+>https://railway.app
+
+>https://github.com/ju5tu5/barebonechat
+
+>Youtube
+
+
+## Licentie 🌐
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
