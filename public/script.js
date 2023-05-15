@@ -1,5 +1,5 @@
 /*JS berichten versturen*/
-let socket = ioServer()
+let socket = io()
 let messages = document.querySelector('section ul')
 let input = document.querySelector('#message')
 let handle = document.querySelector('#handle')
