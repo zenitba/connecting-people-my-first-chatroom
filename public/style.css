@@ -55,8 +55,8 @@ main {
 }
  /* chatbox */
 section{
-  width: 45rem;
-  height: 60rem;
+  width: 43rem;
+  height: 49rem;
   background: rgba(255, 255, 255, 0.913);
   backdrop-filter: blur(1rem);
   border-radius: 2rem;
