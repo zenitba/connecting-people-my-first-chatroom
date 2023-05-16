@@ -15,6 +15,11 @@
 Een chat gemaakt in de huistijl van Vini Mini waar ouders met elkaar kunnen praten met behulp van Socket.IO, Node.js en Express.
 
 ## Gebruik 👩🏽‍💻
+Ik heb een chatroom gemaakt waar gebruikers met elkaar kunnen chatten.
+De aantal online gebruikers kunt je bekijken en ook de gebruikers naam bij de gestuurde bericht.
+
+De userstory waar ik ga werken deze sprint is:
+> 2#Connection tussen Vini Minions
 
 ## Kenmerken ✅
 Bij het maken van deze opdracht heb ik gebruik gemaakt van:
